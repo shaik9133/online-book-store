@@ -4,6 +4,7 @@ export const AuthContext = createContext();
 
 export default function AuthProvider({ children }) {
   const initialAuthUser = localStorage.getItem("Users");
+  console.log(":: initialAuthUser ::",initialAuthUser)
   const [authUser, setAuthUser] = useState(
     initialAuthUser ? JSON.parse(initialAuthUser) : undefined
   );

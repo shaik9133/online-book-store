@@ -7,6 +7,6 @@ const bookSchema = mongoose.Schema({
     image: String,
     title: String,
 });
-const Book = mongoose.model("Book", bookSchema);
+const Book = mongoose.model("books", bookSchema);
 
 export default Book;
