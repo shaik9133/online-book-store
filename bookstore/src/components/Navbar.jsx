@@ -5,7 +5,7 @@ import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
 
 function Navbar() {
-  const [authUser, setAuthUser] = useAuth();
+  const [authUser] = useAuth();
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
